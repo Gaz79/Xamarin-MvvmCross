@@ -1,16 +1,10 @@
 ﻿using System;
 
-using Cirrious.MvvmCross.ViewModels;
-
-namespace XamCross
+namespace XamCross.Plugins.Dialogs
 {
-    public class AbstractViewModel : MvxViewModel, IViewModel
+    public abstract class AbstractDialogService : IDialogService
     {
         #region constructors
-
-        public AbstractViewModel()
-        {
-        }
 
         #endregion
 

@@ -35,6 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\..\Plugins\Contacts\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
+      <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
+      <Name>XamCross.Plugins.Contacts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XamCross.Models\XamCross.Models.csproj">
       <Project>{7dc16cc2-2408-4eac-b8a9-d6476af3f22f}</Project>
       <Name>XamCross.Models</Name>
@@ -46,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="ContactListViewModel.cs" />
     <Compile Include="HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreenViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

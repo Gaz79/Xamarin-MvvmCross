@@ -86,9 +86,6 @@ namespace XamCross.Droid
 			// aapt resource value: 0x7f050000
 			public const int MvxBindingTagUnique = 2131034112;
 			
-			// aapt resource value: 0x7f050001
-			public const int MyButton = 2131034113;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -106,7 +103,7 @@ namespace XamCross.Droid
 			public const int HomeView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int ItemTemplate_Menu = 2130903041;
 			
 			// aapt resource value: 0x7f030002
 			public const int SplashScreen = 2130903042;

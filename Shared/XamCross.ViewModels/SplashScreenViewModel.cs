@@ -1,16 +1,10 @@
 ﻿using System;
 
-using Cirrious.MvvmCross.ViewModels;
-
-namespace XamCross
+namespace XamCross.ViewModels
 {
-    public class AbstractViewModel : MvxViewModel, IViewModel
+    public class SplashScreenViewModel : AbstractViewModel
     {
         #region constructors
-
-        public AbstractViewModel()
-        {
-        }
 
         #endregion
 

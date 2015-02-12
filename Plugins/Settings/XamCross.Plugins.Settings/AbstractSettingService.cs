@@ -1,16 +1,10 @@
 ﻿using System;
 
-using Cirrious.MvvmCross.ViewModels;
-
-namespace XamCross
+namespace XamCross.Plugins.Settings
 {
-    public class AbstractViewModel : MvxViewModel, IViewModel
+    public abstract class AbstractSettingService : ISettingService
     {
         #region constructors
-
-        public AbstractViewModel()
-        {
-        }
 
         #endregion
 
