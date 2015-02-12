@@ -1,16 +1,18 @@
 using Android.App;
 using Android.OS;
+
 using Cirrious.MvvmCross.Droid.Views;
 
 namespace XamCross.Droid.Views
 {
-    [Activity(Label = "View for FirstViewModel")]
-    public class FirstView : MvxActivity
+    [Activity(Label = "Home")]
+    public class HomeView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.FirstView);
+
+            SetContentView(Resource.Layout.HomeView);
         }
     }
 }

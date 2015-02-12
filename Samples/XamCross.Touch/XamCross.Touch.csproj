@@ -89,18 +89,12 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\HomeView.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RootViewController.designer.cs">
-      <DependentUpon>RootViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RootViewController.cs" />
-    <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
-    <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
     <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
@@ -131,9 +125,8 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppDelegate.cs.txt" />
     <Content Include="Entitlements.plist" />
-    <Content Include="ToDo-MvvmCross\_ Touch UI.txt" />
+    <BundleResource Include="Images\splash.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Plugins\Contacts\XamCross.Plugins.Contacts.Touch\XamCross.Plugins.Contacts.Touch.csproj">

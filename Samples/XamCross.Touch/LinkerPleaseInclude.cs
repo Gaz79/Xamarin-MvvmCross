@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Specialized;
 using System.Windows.Input;
+
 using Cirrious.MvvmCross.Touch.Views;
+
 using Foundation;
+
 using UIKit;
 
 namespace XamCross.Touch
@@ -14,14 +17,12 @@ namespace XamCross.Touch
     {
         public void Include(UIButton uiButton)
         {
-            uiButton.TouchUpInside += (s, e) =>
-                                      uiButton.SetTitle(uiButton.Title(UIControlState.Normal), UIControlState.Normal);
+            uiButton.TouchUpInside += (s, e) => uiButton.SetTitle(uiButton.Title(UIControlState.Normal), UIControlState.Normal);
         }
 
         public void Include(UIBarButtonItem barButton)
         {
-            barButton.Clicked += (s, e) =>
-                                 barButton.Title = barButton.Title + "";
+            barButton.Clicked += (s, e) => barButton.Title = barButton.Title + "";
         }
 
         public void Include(UITextField textField)
@@ -89,23 +90,23 @@ namespace XamCross.Touch
 
         public void Include(INotifyCollectionChanged changed)
         {
-            changed.CollectionChanged += (s, e) => { var test = string.Format("{0}{1}{2}{3}{4}", e.Action,e.NewItems, e.NewStartingIndex, e.OldItems, e.OldStartingIndex); } ;
+            changed.CollectionChanged += (s, e) => { var test = string.Format("{0}{1}{2}{3}{4}", e.Action, e.NewItems, e.NewStartingIndex, e.OldItems, e.OldStartingIndex); };
         }
-		
+
         public void Include(ICommand command)
         {
-           command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
+            command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
         }
 
-		public void Include(Cirrious.CrossCore.IoC.MvxPropertyInjector injector)
-		{
-			injector = new Cirrious.CrossCore.IoC.MvxPropertyInjector();
-		} 
+        public void Include(Cirrious.CrossCore.IoC.MvxPropertyInjector injector)
+        {
+            injector = new Cirrious.CrossCore.IoC.MvxPropertyInjector();
+        }
 
-		public void Include(System.ComponentModel.INotifyPropertyChanged changed)
-		{
-			changed.PropertyChanged += (sender, e) => { var test = e.PropertyName; };
-		}
-	}
+        public void Include(System.ComponentModel.INotifyPropertyChanged changed)
+        {
+            changed.PropertyChanged += (sender, e) => { var test = e.PropertyName; };
+        }
+    }
 }
 
