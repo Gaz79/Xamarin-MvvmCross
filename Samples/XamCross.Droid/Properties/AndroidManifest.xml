@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="XamCross.Droid" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="za.co.xamcross.droid" android:versionCode="1" android:versionName="1.0">
 	<uses-sdk android:targetSdkVersion="21" android:minSdkVersion="19" />
-	<application android:label="XamCross.Droid" android:icon="@drawable/Icon"></application>
+	<application android:label="XamCross" android:icon="@drawable/Icon" android:theme="@style/android:Theme.Holo.Light"></application>
 </manifest>
