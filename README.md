@@ -10,7 +10,8 @@
 
 ## The Project
 
-- I will try to minimise any dependencies on 3rd party libraries as much as possible, sticking to the latest stable release of Xamarin for Visual Studio and MvvmCross as of 12 Feb 2015.
+- For this sample application, I will limit the target platforms to Android, iOS and Windows Phone (RT).
+- I will try to minimise any dependencies on 3rd party libraries as much as possible, sticking to the current stable release of Xamarin for Visual Studio and MvvmCross.
 - **Xamarin 3.9.236.0**
 - **Xamarin.Android 4.20.0.34**
 - **Xamarin.iOS 8.6.0.0**
@@ -22,3 +23,15 @@
 - There is currently a known bug with the Xamarin for Android integration into Visual Studio.
 - Please make sure that you always explicitly set "Compile using Android version:" under the Application Section of the Project Properties.
 - If you set it to "Use Latest Platform..." it doesn't stamp the .csproj file and nuget will install packages for the default MonoAndroid22 instead of your preferred api.
+
+### Xamarin Android
+>
+I will use this section to discuss any Android specific challenges.
+
+### Xamarin iOS
+>
+I will use this section to discuss any iOS specific challenges.
+
+### Windows Phone (RT)
+>
+I will use this section to discuss any Windows Phone specific challenges.
