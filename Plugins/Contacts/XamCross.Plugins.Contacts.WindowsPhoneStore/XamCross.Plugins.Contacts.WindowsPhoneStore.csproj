@@ -42,6 +42,7 @@
     <TargetPlatform Include="Windows, Version=8.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WindowsContactExtensions.cs" />
     <Compile Include="ContactService.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +59,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\XamCross\XamCross.csproj">
+      <Project>{60FF7A97-E12C-47FF-934D-870A72403D6A}</Project>
+      <Name>XamCross</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
       <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
       <Name>XamCross.Plugins.Contacts</Name>

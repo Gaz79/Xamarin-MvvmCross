@@ -8,8 +8,19 @@ namespace XamCross.Plugins.Contacts
 
         public string LastName { get; set; }
 
-        public string CellNo { get; set; }
+        public string HomeEmail { get; set; }
 
-        public string TelNo { get; set; }
+        public string HomePhone { get; set; }
+
+        public string MobilePhone { get; set; }
+
+        public string WorkEmail { get; set; }
+
+        public string WorkPhone { get; set; }
+
+        public string DisplayName
+        {
+            get { return FirstName + " " + LastName; }
+        }
     }
 }

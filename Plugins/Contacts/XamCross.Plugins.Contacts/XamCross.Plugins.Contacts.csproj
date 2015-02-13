@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="AbstractContactService.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="ContactsChangedEventArgs.cs" />
     <Compile Include="IContactService.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +51,12 @@
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\XamCross\XamCross.csproj">
+      <Project>{60FF7A97-E12C-47FF-934D-870A72403D6A}</Project>
+      <Name>XamCross</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
