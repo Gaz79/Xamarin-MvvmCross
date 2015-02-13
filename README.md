@@ -12,11 +12,11 @@
 
 - For this sample application, I will limit the target platforms to Android, iOS and Windows Phone (RT).
 - I will try to minimise any dependencies on 3rd party libraries as much as possible, sticking to the current stable release of Xamarin for Visual Studio and MvvmCross.
-**Xamarin 3.9.236.0**
-**Xamarin.Android 4.20.0.34**
-**Xamarin.iOS 8.6.0.0**
-**Xamarin.iOS.Unified Migration 1.0**
-**MvvmCross.* 3.5.0**
+- **Xamarin 3.9.236.0**
+- **Xamarin.Android 4.20.0.34**
+- **Xamarin.iOS 8.6.0.0**
+- **Xamarin.iOS.Unified Migration 1.0**
+- **MvvmCross.* 3.5.0**
 
 ## The Funnies
 
@@ -40,3 +40,5 @@ I will use this section to discuss any Windows Phone specific challenges.
 ## MvvmCross
 
 ### Plugins
+>
+Writing plugins the MvvmCross way:
