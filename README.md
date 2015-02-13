@@ -12,11 +12,11 @@
 
 - For this sample application, I will limit the target platforms to Android, iOS and Windows Phone (RT).
 - I will try to minimise any dependencies on 3rd party libraries as much as possible, sticking to the current stable release of Xamarin for Visual Studio and MvvmCross.
-- **Xamarin 3.9.236.0**
-- **Xamarin.Android 4.20.0.34**
-- **Xamarin.iOS 8.6.0.0**
-- **Xamarin.iOS.Unified Migration 1.0**
-- **MvvmCross.* 3.5.0**
+**Xamarin 3.9.236.0**
+**Xamarin.Android 4.20.0.34**
+**Xamarin.iOS 8.6.0.0**
+**Xamarin.iOS.Unified Migration 1.0**
+**MvvmCross.* 3.5.0**
 
 ## The Funnies
 
@@ -27,6 +27,7 @@
 ### Xamarin Android
 >
 I will use this section to discuss any Android specific challenges.
+- The initial views in the Xamaron Android app will be based activities, but that will soon change to fragments as that is my personal preference and does make it much easier to target different sized devices without much code duplication.
 
 ### Xamarin iOS
 >
@@ -35,3 +36,7 @@ I will use this section to discuss any iOS specific challenges.
 ### Windows Phone (RT)
 >
 I will use this section to discuss any Windows Phone specific challenges.
+
+## MvvmCross
+
+### Plugins
