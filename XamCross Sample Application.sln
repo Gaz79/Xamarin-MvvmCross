@@ -18,10 +18,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.ViewModels", "Shar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{D79CB2AC-8C9D-4932-807D-589519125A44}"
 	ProjectSection(SolutionItems) = preProject
-		Samples\XamCross.Droid\README.md = Samples\XamCross.Droid\README.md
+		Plugins\README.md = Plugins\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contacts", "Contacts", "{17314BF6-827C-40FB-B517-223E91A2A5EA}"
+	ProjectSection(SolutionItems) = preProject
+		Plugins\Contacts\README.md = Plugins\Contacts\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.Plugins.Contacts", "Plugins\Contacts\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj", "{56EE176C-7B1A-406E-90B9-275197DC97C0}"
 EndProject
@@ -40,8 +43,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.Phone", "Samples\XamCross.Phone\XamCross.Phone.csproj", "{47A975AE-726E-4EE6-A39F-002CB0BC4896}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dialogs", "Dialogs", "{14D4F2C9-7383-425B-A729-2475FD5CECB1}"
+	ProjectSection(SolutionItems) = preProject
+		Plugins\Dialogs\README.md = Plugins\Dialogs\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{FF1AD5E2-07D2-4A3E-8ED5-45C9F445B80A}"
+	ProjectSection(SolutionItems) = preProject
+		Plugins\Settings\README.md = Plugins\Settings\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.Plugins.Dialogs", "Plugins\Dialogs\XamCross.Plugins.Dialogs\XamCross.Plugins.Dialogs.csproj", "{922566F5-9ACC-4968-8FDB-BA131CEDB324}"
 EndProject
