@@ -27,18 +27,17 @@
 ### Xamarin Android
 >
 [XamCross.Droid](Samples/XamCross.Droid/README.md)
-- The initial views in the Xamaron Android app will be based activities, but that will soon change to fragments as that is my personal preference and does make it much easier to target different sized devices without much code duplication.
 
 ### Xamarin iOS
 >
-[XamCross.Droid](Samples/XamCross.Touch/README.md)
+[XamCross.Touch](Samples/XamCross.Touch/README.md)
 
 ### Windows Phone (RT)
 >
-[XamCross.Droid](Samples/XamCross.Phone/README.md)
+[XamCross.Phone](Samples/XamCross.Phone/README.md)
 
 ## MvvmCross
 
 ### Plugins
 >
-Writing plugins the MvvmCross way:
+[Plugins the MvvmCross way](Plugins/README.md)
