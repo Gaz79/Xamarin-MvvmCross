@@ -18,12 +18,6 @@
 - **Xamarin.iOS.Unified Migration 1.0**
 - **MvvmCross.* 3.5.0**
 
-## The Funnies
-
-- There is currently a known bug with the Xamarin for Android integration into Visual Studio.
-- Please make sure that you always explicitly set "Compile using Android version:" under the Application Section of the Project Properties.
-- If you set it to "Use Latest Platform..." it doesn't stamp the .csproj file and nuget will install packages for the default MonoAndroid22 instead of your preferred api.
-
 ### Xamarin Android
 >
 [XamCross.Droid](Samples/XamCross.Droid/README.md)
