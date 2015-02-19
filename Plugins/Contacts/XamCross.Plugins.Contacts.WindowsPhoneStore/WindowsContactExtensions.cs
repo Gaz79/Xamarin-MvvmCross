@@ -11,8 +11,8 @@ namespace XamCross.Plugins.Contacts.WindowsPhoneStore
             {
                 return new Contact
                 {
-                    FirstName = contact.FirstName,
-                    LastName = contact.LastName,
+                    DisplayName = string.Format("{0} {1}", contact.FirstName, contact.LastName),
+                    //LastName = contact.LastName,
                     //HomeEmail = contact.Emails.Count > 0 ? contact.Emails.FirstOrDefault(c => c.Kind.Equals(Windows.ApplicationModel.Contacts.ContactEmailKind.Personal)).Address : "",
                     //HomePhone = contact.Phones.Count > 0 ? contact.Phones.FirstOrDefault(c => c.Kind.Equals(Windows.ApplicationModel.Contacts.ContactPhoneKind.Home)).Number : "",
                     //MobilePhone = contact.Phones.Count > 0 ? contact.Phones.FirstOrDefault(c => c.Kind.Equals(Windows.ApplicationModel.Contacts.ContactPhoneKind.Mobile)).Number : "",

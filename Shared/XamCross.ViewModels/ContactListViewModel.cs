@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using XamCross.Plugins.Contacts;
 
 namespace XamCross.ViewModels
@@ -25,8 +24,6 @@ namespace XamCross.ViewModels
 
         private readonly IContactService _contactService;
 
-        private ICollection<Contact> _contacts;
-
         #endregion
 
         #region methods
@@ -35,23 +32,14 @@ namespace XamCross.ViewModels
 
         private async void GetContacts()
         {
-            _contactService.ContactsChanged += OnContactsChanged;
-
             try
             {
-                _contactService.GetContacts();
+                Items = _contactService.GetContacts();
             }
             catch (Exception ex)
             {
                 throw;
             }
-        }
-
-        private void OnContactsChanged(object sender, ContactsChangedEventArgs e)
-        {
-            _contactService.ContactsChanged -= OnContactsChanged;
-            
-            Contacts = e.Contacts;
         }
 
         #endregion
@@ -60,7 +48,12 @@ namespace XamCross.ViewModels
 
         protected async override void SelectionChanged(Contact entity)
         {
-            throw new NotImplementedException();
+            if (Guard.IsNull(entity))
+            {
+                return;
+            }
+
+            //ShowViewModel();
         }
 
         #endregion
@@ -79,16 +72,6 @@ namespace XamCross.ViewModels
         #endregion
 
         #region properties
-
-        public ICollection<Contact> Contacts
-        {
-            get { return _contacts; }
-            private set
-            {
-                _contacts = value;
-                RaisePropertyChanged(() => Contacts);
-            }
-        }
 
         #endregion
     }

@@ -24,7 +24,7 @@
             <ListView ItemsSource="{Binding Items, Mode=OneWay}" SelectionChanged="ListView_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding FirstName}" FontSize="18" />
+                        <TextBlock Text="{Binding DisplayName}" FontSize="18" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

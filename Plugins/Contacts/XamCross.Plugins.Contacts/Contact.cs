@@ -18,9 +18,6 @@ namespace XamCross.Plugins.Contacts
 
         public string WorkPhone { get; set; }
 
-        public string DisplayName
-        {
-            get { return FirstName + " " + LastName; }
-        }
+        public string DisplayName { get; set; }
     }
 }

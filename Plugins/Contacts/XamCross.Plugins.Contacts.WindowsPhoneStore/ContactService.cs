@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Runtime.InteropServices;
+using System.Linq;
 using System.Threading.Tasks;
+
+using Windows.ApplicationModel.Contacts;
 
 namespace XamCross.Plugins.Contacts.WindowsPhoneStore
 {
@@ -12,28 +13,18 @@ namespace XamCross.Plugins.Contacts.WindowsPhoneStore
 
         public ContactService()
         {
+            _contactStore = Task.Run(async () => await ContactManager.RequestStoreAsync()).Result;
         }
 
         #endregion
 
         #region fields
 
+        private readonly ContactStore _contactStore;
+
         #endregion
 
         #region methods
-
-        #region private
-
-        private static async Task<IList<Windows.ApplicationModel.Contacts.Contact>> GetPhoneContactsAsync()
-        {
-            var picker = new Windows.ApplicationModel.Contacts.ContactPicker();
-
-            picker.DesiredFieldsWithContactFieldType.Add(Windows.ApplicationModel.Contacts.ContactFieldType.PhoneNumber);
-
-            return await picker.PickContactsAsync();
-        }
-
-        #endregion
 
         #region public
 
@@ -42,21 +33,13 @@ namespace XamCross.Plugins.Contacts.WindowsPhoneStore
             return new ContactService();
         }
 
-        public override void GetContacts()
+        public override async Task<ICollection<Contact>> GetContactsAsync()
         {
-            var contacts = new Collection<Contact>();
-
             try
             {
-                GetPhoneContactsAsync().ContinueWith(task =>
-                {
-                    foreach (var contact in task.Result)
-                    {
-                        contacts.Add(contact.Transform());
-                    }
+                var contacts = await _contactStore.FindContactsAsync();
 
-                    OnContactsChanged(contacts);
-                });
+                return contacts.Select(c => c.Transform()).ToList();
             }
             catch (Exception ex)
             {

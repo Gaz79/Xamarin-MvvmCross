@@ -10,7 +10,6 @@ namespace XamCross.ViewModels
         #region constructors
 
         public HomeViewModel()
-            : base()
         {
             Items = new Collection<Menu>
             {

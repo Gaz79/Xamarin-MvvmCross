@@ -56,6 +56,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.Plugins.Dialogs", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.Plugins.Settings", "Plugins\Settings\XamCross.Plugins.Settings\XamCross.Plugins.Settings.csproj", "{89A30C9D-AF8C-4352-8E78-42FF556696A8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dispatcher", "Dispatcher", "{25FD1ADD-BA45-4957-AB80-A1208D76FDE3}"
+	ProjectSection(SolutionItems) = preProject
+		Plugins\Dispatcher\README.md = Plugins\Dispatcher\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamCross.Plugins.Dispatcher", "Plugins\Dispatcher\XamCross.Plugins.Dispatcher\XamCross.Plugins.Dispatcher.csproj", "{EB059A15-32E9-49B4-8C57-B7E56115EC98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -504,6 +511,38 @@ Global
 		{89A30C9D-AF8C-4352-8E78-42FF556696A8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{89A30C9D-AF8C-4352-8E78-42FF556696A8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{89A30C9D-AF8C-4352-8E78-42FF556696A8}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|ARM.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|Mixed Platforms.Build.0 = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Ad-Hoc|x86.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|ARM.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|Mixed Platforms.Build.0 = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.AppStore|x86.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -524,5 +563,7 @@ Global
 		{FF1AD5E2-07D2-4A3E-8ED5-45C9F445B80A} = {D79CB2AC-8C9D-4932-807D-589519125A44}
 		{922566F5-9ACC-4968-8FDB-BA131CEDB324} = {14D4F2C9-7383-425B-A729-2475FD5CECB1}
 		{89A30C9D-AF8C-4352-8E78-42FF556696A8} = {FF1AD5E2-07D2-4A3E-8ED5-45C9F445B80A}
+		{25FD1ADD-BA45-4957-AB80-A1208D76FDE3} = {D79CB2AC-8C9D-4932-807D-589519125A44}
+		{EB059A15-32E9-49B4-8C57-B7E56115EC98} = {25FD1ADD-BA45-4957-AB80-A1208D76FDE3}
 	EndGlobalSection
 EndGlobal
