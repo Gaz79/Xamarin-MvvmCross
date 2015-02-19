@@ -44,6 +44,7 @@ namespace XamCross.Phone.Views
         public new ContactListViewModel ViewModel
         {
             get { return (base.ViewModel as ContactListViewModel); }
+            set { base.ViewModel = value; }
         }
 
         #endregion
