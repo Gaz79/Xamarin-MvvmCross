@@ -6,14 +6,8 @@ namespace XamCross.Plugins.Contacts
 {
     public abstract class AbstractContactService : IContactService
     {
-        public virtual ICollection<Contact> GetContacts()
-        {
-            return Task.Run(async () => await GetContactsAsync()).Result;
-        }
+        public abstract ICollection<Contact> GetContacts();
 
-        public virtual Task<ICollection<Contact>> GetContactsAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Task<ICollection<Contact>> GetContactsAsync();
     }
 }

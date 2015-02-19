@@ -33,6 +33,11 @@ namespace XamCross.Plugins.Contacts.WindowsPhoneStore
             return new ContactService();
         }
 
+        public override ICollection<Contact> GetContacts()
+        {
+            return Task.Run(async () => await GetContactsAsync()).Result;
+        }
+
         public override async Task<ICollection<Contact>> GetContactsAsync()
         {
             try
