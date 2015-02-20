@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Android.Content;
 using Android.Database;
 using Android.Provider;
+using Cirrious.CrossCore;
 
 namespace XamCross.Plugins.Contacts.Droid
 {
@@ -35,7 +36,7 @@ namespace XamCross.Plugins.Contacts.Droid
             return new ContactService();
         }
 
-        public override ICollection<Contact> GetContacts()
+        public override void GetContacts()
         {
             var contacts = new Collection<Contact>();
 
@@ -63,15 +64,16 @@ namespace XamCross.Plugins.Contacts.Droid
             }
             catch (Exception ex)
             {
+                Mvx.Trace(string.Format("ContactService::GetContacts --> {0}", ex.Message));
                 throw;
             }
 
-            return contacts;
+            OnContactsChanged(contacts);
         }
 
-        public override async Task<ICollection<Contact>> GetContactsAsync()
+        public override async Task GetContactsAsync()
         {
-            return await Task.Run(() => GetContacts());
+            await Task.Run(() => GetContacts());
         }
 
         #endregion

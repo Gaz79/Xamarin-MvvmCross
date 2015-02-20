@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
+using Cirrious.CrossCore;
 
 using Windows.ApplicationModel.Contacts;
 
@@ -33,21 +34,22 @@ namespace XamCross.Plugins.Contacts.WindowsPhoneStore
             return new ContactService();
         }
 
-        public override ICollection<Contact> GetContacts()
+        public override void GetContacts()
         {
-            return Task.Run(async () => await GetContactsAsync()).Result;
+            Task.Run(async () => await GetContactsAsync());
         }
 
-        public override async Task<ICollection<Contact>> GetContactsAsync()
+        public override async Task GetContactsAsync()
         {
             try
             {
                 var contacts = await _contactStore.FindContactsAsync();
 
-                return contacts.Select(c => c.Transform()).ToList();
+                OnContactsChanged(contacts.Select(c => c.Transform()));
             }
             catch (Exception ex)
             {
+                Mvx.Trace(string.Format("ContactService::GetContactsAsync --> {0}", ex.Message));
                 throw;
             }
         }

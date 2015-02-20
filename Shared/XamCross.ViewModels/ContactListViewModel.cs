@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+
+using Cirrious.CrossCore;
 
 using XamCross.Plugins.Contacts;
 
@@ -32,14 +35,26 @@ namespace XamCross.ViewModels
 
         private async void GetContacts()
         {
+            _contactService.ContactsChanged += OnContactsChanged;
+
             try
             {
-                Items = _contactService.GetContacts();
+                await _contactService.GetContactsAsync();
             }
             catch (Exception ex)
             {
+                Mvx.Trace(string.Format("ContactListViewModel::GetContacts --> {0}", ex.Message));
                 throw;
             }
+            finally
+            {
+                _contactService.ContactsChanged -= OnContactsChanged;
+            }
+        }
+
+        private async void OnContactsChanged(object sender, ContactsChangedEventArgs e)
+        {
+            Items = e.Contacts as ICollection<Contact>;
         }
 
         #endregion

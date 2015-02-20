@@ -36,7 +36,7 @@ namespace XamCross.Plugins.Contacts.Touch
             return new ContactService();
         }
 
-        public override ICollection<Contact> GetContacts()
+        public override void GetContacts()
         {
             try
             {
@@ -69,7 +69,7 @@ namespace XamCross.Plugins.Contacts.Touch
 
                     var contacts = addressBook.GetPeople();
 
-                    return contacts.Select(p => p.Transform()).ToList();
+                    OnContactsChanged(contacts.Select(c => c.Transform()));
                 }
             }
             catch (Exception ex)
@@ -78,9 +78,9 @@ namespace XamCross.Plugins.Contacts.Touch
             }
         }
 
-        public override async Task<ICollection<Contact>> GetContactsAsync()
+        public override async Task GetContactsAsync()
         {
-            return await Task.Run(() => GetContacts());
+            await Task.Run(() => GetContacts());
         }
 
         #endregion

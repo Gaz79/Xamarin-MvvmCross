@@ -1,13 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace XamCross.Plugins.Contacts
 {
+    public delegate void ContactsChangedEventHandler(object sender, ContactsChangedEventArgs e);
+
     public interface IContactService
     {
-        ICollection<Contact> GetContacts();
+        event ContactsChangedEventHandler ContactsChanged;
 
-        Task<ICollection<Contact>> GetContactsAsync();
+        void GetContacts();
+
+        Task GetContactsAsync();
     }
 }

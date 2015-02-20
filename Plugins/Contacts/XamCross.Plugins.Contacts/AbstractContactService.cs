@@ -6,8 +6,20 @@ namespace XamCross.Plugins.Contacts
 {
     public abstract class AbstractContactService : IContactService
     {
-        public abstract ICollection<Contact> GetContacts();
+        public event ContactsChangedEventHandler ContactsChanged;
 
-        public abstract Task<ICollection<Contact>> GetContactsAsync();
+        protected virtual void OnContactsChanged(IEnumerable<Contact> contacts)
+        {
+            var handler = ContactsChanged;
+
+            if (Guard.IsNotNull(handler))
+            {
+                handler(this, new ContactsChangedEventArgs(contacts));
+            }
+        }
+
+        public abstract void GetContacts();
+
+        public abstract Task GetContactsAsync();
     }
 }
