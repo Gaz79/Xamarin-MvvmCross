@@ -63,6 +63,14 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\XamCross\XamCross.csproj">
+      <Project>{60ff7a97-e12c-47ff-934d-870a72403d6a}</Project>
+      <Name>XamCross</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dispatcher\XamCross.Plugins.Dispatcher\XamCross.Plugins.Dispatcher.csproj">
+      <Project>{eb059a15-32e9-49b4-8c57-b7e56115ec98}</Project>
+      <Name>XamCross.Plugins.Dispatcher</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XamCross.Plugins.Dialogs\XamCross.Plugins.Dialogs.csproj">
       <Project>{922566f5-9acc-4968-8fdb-ba131cedb324}</Project>
       <Name>XamCross.Plugins.Dialogs</Name>
