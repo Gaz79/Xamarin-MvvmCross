@@ -2,7 +2,7 @@
 
 using Cirrious.MvvmCross.ViewModels;
 
-namespace XamCross
+namespace XamCross.ViewModels
 {
     public interface IViewModel : IMvxViewModel
     {

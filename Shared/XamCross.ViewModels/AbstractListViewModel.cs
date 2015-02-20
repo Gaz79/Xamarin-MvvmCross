@@ -4,7 +4,7 @@ using System.Windows.Input;
 
 using Cirrious.MvvmCross.ViewModels;
 
-namespace XamCross
+namespace XamCross.ViewModels
 {
     public abstract class AbstractListViewModel<TEntity> : AbstractViewModel where TEntity : class
     {

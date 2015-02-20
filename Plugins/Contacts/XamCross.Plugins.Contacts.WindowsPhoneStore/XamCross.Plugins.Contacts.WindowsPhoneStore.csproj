@@ -44,6 +44,10 @@
       <Project>{60FF7A97-E12C-47FF-934D-870A72403D6A}</Project>
       <Name>XamCross</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Dialogs\XamCross.Plugins.Dialogs\XamCross.Plugins.Dialogs.csproj">
+      <Project>{922566f5-9acc-4968-8fdb-ba131cedb324}</Project>
+      <Name>XamCross.Plugins.Dialogs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
       <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
       <Name>XamCross.Plugins.Contacts</Name>

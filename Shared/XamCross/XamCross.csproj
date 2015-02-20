@@ -38,11 +38,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractListViewModel.cs" />
-    <Compile Include="AbstractViewModel.cs" />
     <Compile Include="Guard.cs" />
     <Compile Include="IEntity.cs" />
-    <Compile Include="IViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
