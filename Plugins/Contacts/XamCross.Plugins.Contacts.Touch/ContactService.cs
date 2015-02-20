@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+
+using AddressBook;
 
 namespace XamCross.Plugins.Contacts.Touch
 {
@@ -11,6 +14,8 @@ namespace XamCross.Plugins.Contacts.Touch
         #endregion
 
         #region fields
+
+        private ABAddressBook _addressBook;
 
         #endregion
 
@@ -25,7 +30,16 @@ namespace XamCross.Plugins.Contacts.Touch
 
         public override ICollection<Contact> GetContacts()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var contacts = _addressBook.GetPeople();
+
+                return contacts.Select(p => p.Transform()).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public override async Task<ICollection<Contact>> GetContactsAsync()

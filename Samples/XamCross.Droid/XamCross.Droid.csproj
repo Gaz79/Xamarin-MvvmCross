@@ -77,6 +77,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrap\DialogPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\DispatcherPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\SettingPluginBootstrap.cs" />
     <Compile Include="Bootstrap\ContactPluginBootstrap.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
@@ -122,6 +125,30 @@
     <ProjectReference Include="..\..\Plugins\Contacts\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
       <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
       <Name>XamCross.Plugins.Contacts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dialogs\XamCross.Plugins.Dialogs.Droid\XamCross.Plugins.Dialogs.Droid.csproj">
+      <Project>{13cb3a67-2268-4763-b260-5e00a7d6334e}</Project>
+      <Name>XamCross.Plugins.Dialogs.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dialogs\XamCross.Plugins.Dialogs\XamCross.Plugins.Dialogs.csproj">
+      <Project>{922566f5-9acc-4968-8fdb-ba131cedb324}</Project>
+      <Name>XamCross.Plugins.Dialogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dispatcher\XamCross.Plugins.Dispatcher.Droid\XamCross.Plugins.Dispatcher.Droid.csproj">
+      <Project>{e18cd5b5-0d7a-43e1-8008-128add701e5f}</Project>
+      <Name>XamCross.Plugins.Dispatcher.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dispatcher\XamCross.Plugins.Dispatcher\XamCross.Plugins.Dispatcher.csproj">
+      <Project>{eb059a15-32e9-49b4-8c57-b7e56115ec98}</Project>
+      <Name>XamCross.Plugins.Dispatcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Settings\XamCross.Plugins.Settings.Droid\XamCross.Plugins.Settings.Droid.csproj">
+      <Project>{fa429d93-8494-40a1-b585-c287779e4c8c}</Project>
+      <Name>XamCross.Plugins.Settings.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Settings\XamCross.Plugins.Settings\XamCross.Plugins.Settings.csproj">
+      <Project>{89a30c9d-af8c-4352-8e78-42ff556696a8}</Project>
+      <Name>XamCross.Plugins.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Shared\XamCross.Models\XamCross.Models.csproj">
       <Project>{7dc16cc2-2408-4eac-b8a9-d6476af3f22f}</Project>

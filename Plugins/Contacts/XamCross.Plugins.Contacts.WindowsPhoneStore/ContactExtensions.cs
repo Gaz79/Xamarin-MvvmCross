@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace XamCross.Plugins.Contacts.WindowsPhoneStore
 {
-    public static class WindowsContactExtensions
+    public static class ContactExtensions
     {
         public static Contact Transform(this Windows.ApplicationModel.Contacts.Contact contact)
         {

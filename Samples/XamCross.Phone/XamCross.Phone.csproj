@@ -88,6 +88,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Bootstrap\ContactPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\DialogPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\DispatcherPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\SettingPluginBootstrap.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
@@ -152,6 +155,30 @@
     <ProjectReference Include="..\..\Plugins\Contacts\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
       <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
       <Name>XamCross.Plugins.Contacts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dialogs\XamCross.Plugins.Dialogs.WindowsPhoneStore\XamCross.Plugins.Dialogs.WindowsPhoneStore.csproj">
+      <Project>{9614ae57-e3fc-4ef2-8d7b-6bbd58407d2c}</Project>
+      <Name>XamCross.Plugins.Dialogs.WindowsPhoneStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dialogs\XamCross.Plugins.Dialogs\XamCross.Plugins.Dialogs.csproj">
+      <Project>{922566f5-9acc-4968-8fdb-ba131cedb324}</Project>
+      <Name>XamCross.Plugins.Dialogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dispatcher\XamCross.Plugins.Dispatcher.WindowsPhoneStore\XamCross.Plugins.Dispatcher.WindowsPhoneStore.csproj">
+      <Project>{db7f1199-f8eb-491c-bd85-2123c3f16590}</Project>
+      <Name>XamCross.Plugins.Dispatcher.WindowsPhoneStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Dispatcher\XamCross.Plugins.Dispatcher\XamCross.Plugins.Dispatcher.csproj">
+      <Project>{eb059a15-32e9-49b4-8c57-b7e56115ec98}</Project>
+      <Name>XamCross.Plugins.Dispatcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Settings\XamCross.Plugins.Settings.WindowsPhoneStore\XamCross.Plugins.Settings.WindowsPhoneStore.csproj">
+      <Project>{064a73e2-b032-4639-a1ff-87a72dc0711a}</Project>
+      <Name>XamCross.Plugins.Settings.WindowsPhoneStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugins\Settings\XamCross.Plugins.Settings\XamCross.Plugins.Settings.csproj">
+      <Project>{89a30c9d-af8c-4352-8e78-42ff556696a8}</Project>
+      <Name>XamCross.Plugins.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Shared\XamCross.Models\XamCross.Models.csproj">
       <Project>{7dc16cc2-2408-4eac-b8a9-d6476af3f22f}</Project>

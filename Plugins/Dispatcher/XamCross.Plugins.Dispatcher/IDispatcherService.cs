@@ -5,6 +5,6 @@ namespace XamCross.Plugins.Dispatcher
 {
     public interface IDispatcherService
     {
-        Task InvokeUi(Action action);
+        void InvokeUI(Action action);
     }
 }

@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2B875FB9-DE2D-41D2-8C0E-A95D02A5116E}</ProjectGuid>
+    <ProjectGuid>{BEE93C2A-32DE-4B86-A026-A7E31248E0AD}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamCross.Plugins.Contacts.Touch</RootNamespace>
+    <RootNamespace>XamCross.Plugins.Settings.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XamCross.Plugins.Contacts.Touch</AssemblyName>
+    <AssemblyName>XamCross.Plugins.Settings.Touch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,10 +34,9 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ContactExtensions.cs" />
-    <Compile Include="ContactService.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -64,9 +63,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
-      <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
-      <Name>XamCross.Plugins.Contacts</Name>
+    <ProjectReference Include="..\XamCross.Plugins.Settings\XamCross.Plugins.Settings.csproj">
+      <Project>{89a30c9d-af8c-4352-8e78-42ff556696a8}</Project>
+      <Name>XamCross.Plugins.Settings</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

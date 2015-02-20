@@ -6,7 +6,7 @@ using Android.Provider;
 
 namespace XamCross.Plugins.Contacts.Droid
 {
-    public static class AndroidContactExtensions
+    public static class ContactExtensions
     {
         public static Contact Transform(this ICursor cursor, Context activity, string[] projection)
         {

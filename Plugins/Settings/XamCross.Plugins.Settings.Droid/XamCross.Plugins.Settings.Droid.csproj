@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8953B930-2C6A-4630-AD32-35FCBE4E5532}</ProjectGuid>
+    <ProjectGuid>{FA429D93-8494-40A1-B585-C287779E4C8C}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XamCross.Plugins.Contacts.Droid</RootNamespace>
-    <AssemblyName>XamCross.Plugins.Contacts.Droid</AssemblyName>
+    <RootNamespace>XamCross.Plugins.Settings.Droid</RootNamespace>
+    <AssemblyName>XamCross.Plugins.Settings.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -60,12 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactExtensions.cs" />
-    <Compile Include="ContactService.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities.cs" />
+    <Compile Include="SettingService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -75,9 +73,9 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamCross.Plugins.Contacts\XamCross.Plugins.Contacts.csproj">
-      <Project>{56ee176c-7b1a-406e-90b9-275197dc97c0}</Project>
-      <Name>XamCross.Plugins.Contacts</Name>
+    <ProjectReference Include="..\XamCross.Plugins.Settings\XamCross.Plugins.Settings.csproj">
+      <Project>{89a30c9d-af8c-4352-8e78-42ff556696a8}</Project>
+      <Name>XamCross.Plugins.Settings</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

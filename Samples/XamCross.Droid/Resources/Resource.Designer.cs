@@ -28,6 +28,12 @@ namespace XamCross.Droid
 		{
 			global::XamCross.Plugins.Contacts.Droid.Resource.String.ApplicationName = global::XamCross.Droid.Resource.String.ApplicationName;
 			global::XamCross.Plugins.Contacts.Droid.Resource.String.Hello = global::XamCross.Droid.Resource.String.Hello;
+			global::XamCross.Plugins.Dialogs.Droid.Resource.String.ApplicationName = global::XamCross.Droid.Resource.String.ApplicationName;
+			global::XamCross.Plugins.Dialogs.Droid.Resource.String.Hello = global::XamCross.Droid.Resource.String.Hello;
+			global::XamCross.Plugins.Dispatcher.Droid.Resource.String.ApplicationName = global::XamCross.Droid.Resource.String.ApplicationName;
+			global::XamCross.Plugins.Dispatcher.Droid.Resource.String.Hello = global::XamCross.Droid.Resource.String.Hello;
+			global::XamCross.Plugins.Settings.Droid.Resource.String.ApplicationName = global::XamCross.Droid.Resource.String.ApplicationName;
+			global::XamCross.Plugins.Settings.Droid.Resource.String.Hello = global::XamCross.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
