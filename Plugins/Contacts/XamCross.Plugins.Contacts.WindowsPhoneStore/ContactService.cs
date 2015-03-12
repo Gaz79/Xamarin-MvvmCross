@@ -36,7 +36,7 @@ namespace XamCross.Plugins.Contacts.WindowsPhoneStore
 
         public override void GetContacts()
         {
-            Task.Run(async () => await GetContactsAsync());
+            GetContactsAsync().Wait();
         }
 
         public override async Task GetContactsAsync()
